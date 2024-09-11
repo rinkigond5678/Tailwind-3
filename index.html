@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Tailwind</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mx-auto p-5">
+        <!-- Header and Navigation -->
+        <div class="md:flex md:flex-row md:justify-between text-center">
+            <div class="flex flex-row justify-center">
+                <div class="bg-gradient-to-r from-red-500 to-yellow-500 w-10 h-10 rounded-lg"></div>
+                <h1 class="text-3xl text-black-600 ml-2">Logo</h1>
+            </div>
+            <div class="mt-2">
+                <a href="#" class="text-gray-600 hover:text-purple-600 p-4">Home</a>
+                <a href="#" class="text-gray-600 hover:text-purple-600 p-4">Watch</a>
+                <a href="#" class="text-gray-600 hover:text-purple-600 p-4">Favourite</a>
+                <a href="#" class="text-gray-600 hover:text-purple-600 p-4">Continue watching...</a>
+                <a href="#" class="bg-yellow-600 text-gray-50 hover:bg-yellow-600 p-3 px-5 rounded-full">Watch (0)</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="md:flex md:flex-row mt-20">
+            <!-- Left Content -->
+            <div class="md:w-2/5 flex flex-col justify-center items-center">
+                <h2 class="font-serif text-5xl text-black-600 mb-4 text-center md:self-start md:text-left">Latest Episode</h2>
+                <p class="uppercase text-gray-600 tracking-wide text-center md:self-start md:text-left">Stream full seasons of the top anime, simulcasts, Anime Only Originals, and more!</p>
+                <p class="uppercase text-gray-600 tracking-wide text-center md:self-start md:text-left">Watch and enjoy!!</p>
+                <a href="#" class="bg-gradient-to-r from-gray-300 to-yellow-500 rounded-full py-4 px-8 text-gray-50 uppercase text-xl md:self-start my-5">Watch Now</a>
+            </div>
+
+            <!-- Right Content (Images) -->
+            <div class="md:w-3/5">
+                <img src="download 2.jfif" alt="Image 1" class="w-full h-auto rounded-lg mb-4 "/>
+                <img src="download 9.jfif" alt="Image 2" class="w-full h-auto rounded-lg"/>
+            </div>
+        </div>
+
+        <!-- Latest Series Section -->
+        <div class="my-20">
+            <div class="flex flex-row justify-between items-center">
+                <h2 class="text-3xl">Latest Series</h2>
+                <a href="#" class="text-xl flex flex-row items-center">
+                    View All
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-4 gap-10 mt-5">
+                <div class="shadow-lg rounded-lg">
+                    <img src="download 2.jfif" alt="Series 1" class="rounded-lg w-full h-48 object-cover" />
+                    
+                </div>
+
+                <div class="shadow-lg rounded-lg">
+                    <img src="download (8).jfif" alt="Series 2" class="rounded-lg w-full h-48 object-cover" />
+                </div>
+                
+                
+                <div class="shadow-lg rounded-lg">
+                    <img src="download 9.jfif" alt="Series 3" class="rounded-lg w-full h-48 object-cover" />
+                </div>
+            </div>
+            <div class="my-20">
+                <div class="flex flex-row justify-between items-center">
+                    <h2 class="text-3xl">Mostly Watched</h2>
+                    <a href="#" class="text-xl flex flex-row items-center">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid grid-cols-4 gap-10 mt-5">
+                    <div class="shadow-lg rounded-lg">
+                        <img src="download.jfif" alt="Series 1" class="rounded-lg w-full h-48 object-cover" />
+                    </div>
+                    <div class="shadow-lg rounded-lg">
+                        <img src="download (7).jfif" alt="Series 2" class="rounded-lg w-full h-48 object-cover" />
+                    </div>
+                    <div class="shadow-lg rounded-lg">
+                        <img src="download (1).jfif" alt="Series 3" class="rounded-lg w-full h-48 object-cover" />
+                    </div>
+                    <div class="shadow-lg rounded-lg">
+                        <img src="Images of tailwind.jfif" alt="Series 4" class="rounded-lg w-full h-48 object-cover" />
+                    </div>
+                    <div class="shadow-lg rounded-lg">
+                    <img src="download (6).jfif" alt="Series 5" class="rounded-lg w-full h-48 object-cover" />
+                    </div>
+                    
+                    
+                </div>
+                <div class="my-20">
+                    <div class="flex flex-row justify-between items-center">
+                        <h2 class="text-3xl">Latest Movies</h2>
+                        <a href="#" class="text-xl flex flex-row items-center">
+                            View All
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-4 gap-10 mt-5">
+                        
+                        <div class="shadow-lg rounded-lg">
+                            <img src="download (4).jfif" alt="Series 2" class="rounded-lg w-full h-48 object-cover" />
+                        </div>
+                        <div class="shadow-lg rounded-lg">
+                            <img src="download (5).jfif" alt="Series 3" class="rounded-lg w-full h-48 object-cover" />
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+</body>
+</html>
